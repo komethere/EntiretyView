@@ -9,6 +9,8 @@ echo ━━━━━━━━━━━━━━━━━━━━━━━━━
 echo Loading...
 echo ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo REQUIREMENTS.txt INSTALL HERE
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 echo Succesfully installed all dependencies!
 echo.
 set /p id=Would you like to start PROGRAM (Y/N): 

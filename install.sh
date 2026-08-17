@@ -8,6 +8,8 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo "Loading..."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "REQUIREMENTS.txt INSTALL HERE"
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 echo "Succesfully installed all dependencies!"
 echo ""
 read -p "Would you like to start PROGRAM (Y/N): " id
