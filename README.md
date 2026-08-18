@@ -33,9 +33,11 @@ We supply cross-platform deployment modules that handle system workspace creatio
 
 ###  On Linux & macOS
 1. Open your native shell terminal.
-2. Grant executing privileges to the installation module:
+2. Change directory into EntiretyView & Grant executing privileges to the installation module:
    ```bash
+   cd EntiretyView
    chmod +x install.sh
+   
    ```
 3. Initialize the setup script:
    ```bash
