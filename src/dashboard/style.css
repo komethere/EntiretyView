@@ -7,23 +7,37 @@ body {
     display: flex;
     background: #1e1e1e;
     flex-direction: column;
+    margin: 0;
 }
 
 h2 {
-    align-self: center;
+    text-align: center;
     width: 100vw;
     background: #333;
+    margin-top: 0px;
 }
 
 .input {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 5px 5px;
-    width: 60vw;
+    width: 50vw;
     align-self: center;
+    background: #333;
+    padding: 5px 2px 5px 2px;
 }
 
 .subinput {
     flex-direction: row;
     margin-bottom: 1.5vh;
+    align-self: center;
+}
+
+.subinput input {
+    width: 22.5vw;
+}
+
+.input button {
+    width: 48.5vw;
+    color: #696969;
+    align-self: center;
 }
