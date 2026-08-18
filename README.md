@@ -7,7 +7,7 @@ EntiretyView is an advanced Open Source Intelligence (OSINT) lookup utility engi
 ## Key Features
 
 *  **Social Media Lookup:** Scan multiple social networks to locate user profiles, linked handles, and hidden accounts.
-*  **Geolocation tool:**  We use multiple othe 
+*  **Geolocation tool:**  We use another repository called sparkyniner/Netryx-Astra-V2-Geolocation-Tool which uses AI to find out the location of images read more about it [Here](https://github.com/sparkyniner/Netryx-Astra-V2-Geolocation-Tool#)
 *  **Identity Contextualization:** Synthesize disparate open-source signals into a unified informational profile.
 *  **Cross-Platform Installers:** Native automation scripts provided out of the box for Linux, macOS, and Windows.
 
