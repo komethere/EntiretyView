@@ -15,18 +15,18 @@ env_choice=$(echo "$env_choice" | tr '[:lower:]' '[:upper:]')
 
 if [ "$env_choice" = "Y" ]; then
     # Create the venv inside the project folder
-    python3 -m venv ./EntiretyView/.venv
+    python3 -m venv ./.venv
     # Activate the environment
-    source ./EntiretyView/.venv/bin/activate
+    source ./.venv/bin/activate
     # Upgrade pip inside the environment
     python -m pip install --upgrade pip
     # Install dependencies (added missing -r flag)
-    pip install -r ./EntiretyView/requirements.txt
+    pip install -r ./requirements.txt
     echo "Successfully installed all dependencies in the Virtual Environment!"
 else
     # Global installation
     python3 -m pip install --upgrade pip
-    python3 -m pip install -r ./EntiretyView/requirements.txt
+    python3 -m pip install -r ./requirements.txt
     echo "Successfully installed all dependencies globally!"
 fi
 
@@ -37,7 +37,7 @@ start_choice=$(echo "$start_choice" | tr '[:lower:]' '[:upper:]')
 
 if [ "$start_choice" = "Y" ]; then
     echo "Starting EntiretyView..."
-    python3 ./EntiretyView/script.py
+    python3 ./script.py
     
     # If they used a venv, deactivate it after the program closes
     if [ "$env_choice" = "Y" ]; then

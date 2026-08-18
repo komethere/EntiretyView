@@ -15,19 +15,19 @@ set /p env_choice=Would you like to install in a Virtual Environment? (Y/N):
 
 if /i "%env_choice%"=="Y" (
     echo Creating virtual environment inside .\EntiretyView\.venv...
-    python -m venv .\EntiretyView\.venv
+    python -m venv .\.venv
     
     echo Activating Virtual Environment...
-    call .\EntiretyView\.venv\Scripts\activate.bat
+    call .\.venv\Scripts\activate.bat
     
     echo Installing dependencies...
     python -m pip install --upgrade pip
-    pip install -r .\EntiretyView\requirements.txt
+    pip install -r .\requirements.txt
     echo Successfully installed all dependencies in the Virtual Environment!
 ) else (
     echo Installing globally...
     python -m pip install --upgrade pip
-    python -m pip install -r .\EntiretyView\requirements.txt
+    python -m pip install -r .\requirements.txt
     echo Successfully installed all dependencies globally!
 )
 
@@ -37,13 +37,13 @@ set /p start_choice=Would you like to start EntiretyView? (Y/N):
 
 if /i "%start_choice%"=="Y" (
     echo Starting EntiretyView...
-    python .\EntiretyView\script.py
+    python .\src\script.py
     
     :: Deactivate the Virtual Environment after the program closes
-    if /i "%env_choice%"=="Y" call .\EntiretyView\.venv\Scripts\deactivate.bat
+    if /i "%env_choice%"=="Y" call .\.venv\Scripts\deactivate.bat
 ) else (
     echo Terminating...
-    if /i "%env_choice%"=="Y" call .\EntiretyView\.venv\Scripts\deactivate.bat
+    if /i "%env_choice%"=="Y" call .\.venv\Scripts\deactivate.bat
     exit /b 0
 )
 
